@@ -13,8 +13,8 @@ ENDCLASS.
 CLASS zcl_kylin_adapter IMPLEMENTATION.
 
   METHOD zif_olap_adapter~execute_query.
-    " Aquí usarías ZCL_JSON_HTTP_CLIENT para llamar a Kylin
-    rv_result = 'Resultado de Kylin para: ' && iv_query.
+    "ZCL_JSON_HTTP_CLIENT
+    rv_result = 'Kylin response for: ' && iv_query.
   ENDMETHOD.
 
 ENDCLASS.
