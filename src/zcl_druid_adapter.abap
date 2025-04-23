@@ -13,8 +13,8 @@ ENDCLASS.
 CLASS zcl_druid_adapter IMPLEMENTATION.
 
   METHOD zif_olap_adapter~execute_query.
-    " Aquí usarías ZCL_JSON_HTTP_CLIENT para llamar a Druid
-    rv_result = 'Resultado de Druid para: ' && iv_query.
+    "ZCL_JSON_HTTP_CLIENT 
+    rv_result = 'Druid response for: ' && iv_query.
   ENDMETHOD.
 
 ENDCLASS.
